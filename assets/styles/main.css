@@ -10,6 +10,10 @@
   box-sizing: border-box;
   font-family: var(--quicksand);
 }
+
+header{
+  padding: 0 !important;
+}
 /* banner start */
 
 .banner {
@@ -276,7 +280,7 @@ footer{
 
 
 .footer-distributed{
-	background-color: #2c292f;
+	background-color: #1f1e21;
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;

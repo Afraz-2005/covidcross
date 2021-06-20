@@ -276,3 +276,6 @@ input[type=text]:placeholder {
     display: block;
     font-family: cursive;
 }
+.WHO{
+  align-items: center;
+}
