@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>covid-cross | Global visualizations</title>
+    <title>Covid Cross | maps</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./assets/images/2050058_v65_icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/styles/global.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
 <body id="body">
     <header>
@@ -26,14 +26,14 @@
                     <a class="nav-link" href="./index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./map.html">Maps</a>
+                    <a class="nav-link active" href="./map.html">Maps</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle active" href="#global" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Global</a>
                     <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item text-light bg-dark" href="#global">Information</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item text-light bg-dark active" href="./global.html" aria-current="page">Global Visualizations</a></li>
+                        <li><a class="dropdown-item text-light bg-dark" href="./global.html" aria-current="page">Global Visualizations</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -51,26 +51,20 @@
           </nav>  
     </header>
     <br><br>
-    <div class="container-fluid">
-        <button type="button" class="btn btn-dark rounded-pill" id="mode1" onclick="dark()">Dark mode</button>
-        <button type="button" class="btn btn-dark rounded-pill" id="mode2" onclick="light()">light mode</button>
-    </div>
     <main>
         <section class="sec" id="global">
             <div class="container">
                 <div class="content">
                     <div class="about-texts"><br>
                         <br>
-                        <h3> <b>Global visualization</b></h3> <br><br><hr><br><br>
-                        <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" width="100%" height="600px"></iframe>
-                        <br>
-                        <br>
-                        <iframe src="https://ourworldindata.org/grapher/total-deaths-covid-19?country=ITA+ESP+USA" style="width: 100%; height: 600px; border: 0px none;"></iframe>
-                        <br>
-                        <br>
-                        <iframe src="https://ourworldindata.org/grapher/full-list-cumulative-total-tests-per-thousand" style="width: 100%; height: 600px; border: 0px none;"></iframe>
-                        <br> <br><br>
-                        <h5><i>Source: <a href="https://ourworldindata.org/how-to-embed-charts" target="_">ourworldindata.org</a></i></h5>
+                        <h3> <b>Visual Maps</b></h3> <br><br><hr><br><br>
+                        <div class="flourish-embed flourish-map" data-src="story/225979"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                        <br><br>
+                        <div class="flourish-embed flourish-map" data-src="story/555214"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                        <br><br><br><br>
+                        <div class="flourish-embed flourish-table" data-src="story/230195"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                        <br><br><br>
+                        <h5><i>Source: <a href="https://flourish.studio/covid/" target="_">flourish.studio</a></i></h5>
                         <br>
                     </div>
                 </div>
@@ -127,5 +121,6 @@
 
     <script src="./assets/js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
 </body>
 </html>
