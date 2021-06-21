@@ -327,3 +327,7 @@ input[type=password]:placeholder {
   -webkit-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
 }
+
+.banner{
+  border-radius: 5px 5px 5px 5px !important;
+}

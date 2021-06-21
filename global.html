@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>covid-cross | Global visualizations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./assets/images/2050058_v65_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles/global.css">
+</head>
+<body id="body">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                  <img src="./assets/images/././2050058.png" alt="" width="30px" class="d-inline-block align-text-top"> Covid <span class="text-danger">Cross</span>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#global" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Global</a>
+                    <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item text-light bg-dark" href="#global">Information</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-light bg-dark active" href="./global.html" aria-current="page">Global Visualizations</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <li class="nav-item">
+
+                    <button type="button" class="WHO btn btn-success"> 
+                        <a class="nav-link" style="color: rgb(255, 255, 255);">
+                            IEDCR Hotline: <i class="fas fa-phone-alt"> 10655</i>
+                        </a> 
+                    </button>
+                </li>
+              </div>
+            </div>
+          </nav>  
+    </header>
+    <br><br>
+    <div class="container-fluid">
+        <button type="button" class="btn btn-dark" id="mode1" onclick="dark()">Dark mode</button>
+        <button type="button" class="btn btn-dark" id="mode2" onclick="light()">light mode</button>
+    </div>
+
+    <main>
+        <section class="sec" id="global">
+            <div class="container">
+                <div class="content">
+                    <div class="about-texts"><br>
+                        <br>
+                        <h3> <b>Global visualization</b></h3> <br>
+                        <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" width="100%" height="600px"></iframe>
+                        <br>
+                        <br>
+                        <iframe src="https://ourworldindata.org/grapher/total-deaths-covid-19?country=ITA+ESP+USA" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+                        <br>
+                        <br>
+                        <iframe src="https://ourworldindata.org/grapher/full-list-cumulative-total-tests-per-thousand" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+                        <br> <br>
+                        <h5><i>Source: <a href="https://ourworldindata.org/how-to-embed-charts" target="_">ourworldindata.org</a></i></h5>
+                        <br>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+    </main>
+
+    <script src="./assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
 :root {
   --quicksand: 'Quicksand', sans-serif;
+  --Titillium: 'Titillium Web', sans-serif;
 }
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body{
   font-family: var(--quicksand);
 }
 
@@ -25,6 +29,7 @@ header{
   align-items: center;
   padding-top: 190px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.755), rgba(40, 100, 118, 0.809)),url(../images/photo-1584036561584-b03c19da874c.jpg);
+  font-family: var(--Titillium);
 }
 
 
@@ -51,20 +56,20 @@ header{
 
 .button_slide {
   color: #FFF;
-  border: 2px solid #d35d5d;
+  border: 2px solid #e44b4b;
   border-radius: 0px;
   padding: 18px 36px;
   display: inline-block;
   font-size: 17px;
   letter-spacing: 1px;
   cursor: pointer;
-  box-shadow: inset 0 0 0 0 #d35d5d;
+  box-shadow: inset 0 0 0 0 #e45050;
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
 }
 .slide_right:hover {
-  box-shadow: inset 400px 0 0 0 #d35d5d;
+  box-shadow: inset 400px 0 0 0 #da4a4a;
 }
 
 
@@ -82,7 +87,7 @@ header{
   justify-content: center;
   align-items: center;
 }
-
+ 
 .sec .content {
   position: relative;
   text-align: center;
