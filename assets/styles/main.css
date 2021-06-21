@@ -18,6 +18,12 @@ body{
 header{
   padding: 0 !important;
 }
+.navbar{
+  position: fixed !important;
+  width: 100%;
+  display: block;
+  z-index: 1;
+}
 /* banner start */
 
 .banner {
