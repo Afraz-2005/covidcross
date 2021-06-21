@@ -443,3 +443,15 @@ footer{
 	}
 
 }
+@media (max-width: 666px){
+  iframe{
+    height: auto;
+    width: auto;
+  }
+}
+@media (max-width: 314px){
+  iframe{
+    height: 150px;
+    width: 200px;
+  }
+}
