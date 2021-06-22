@@ -23,11 +23,11 @@
           <!-- Login Form -->
           <form action="./index.html">
             <input type="email" id="login" class="fadeIn second" name="login" placeholder="gmail" required>
-            <input type="password" id="password" class="fadeIn third" name="login" placeholder="password" required>
+            <input type="password" id="password" class="fadeIn third" name="login" placeholder="password" size="15" maxlength="100" onkeyup="return passwordChanged();"  required>
             <br>
-            <span id="StrengthDisp" class="badge displayBadge">Weak</span>
+            <span id="strength">Type Password</span>            
             <br>
-            <button type="submit" class="btn-submit" id="submit" onclick="submit();">Login</button>
+            <button type="submit" class="btn-submit" id="submit">Login</button>
             <a href="./index.html" class="goback"><i class="fas fa-long-arrow-alt-left"> </i> Go back</a>
           </form>
       

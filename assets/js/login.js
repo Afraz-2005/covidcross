@@ -1,33 +1,20 @@
-let timeout;
-let password = document.getElementById('password');
-let strengthBadge = document.getElementById('StrengthDisp');
-let strongPassword = new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})')
-let mediumPassword = new RegExp('((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{6,}))|((?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9])(?=.{8,}))')
+function passwordChanged() {
 
-function StrengthChecker(PasswordParameter){
-
-    if(strongPassword.test(PasswordParameter)) {
-        strengthBadge.style.backgroundColor = "green"
-        strengthBadge.textContent = 'Strong'
-    } else if(mediumPassword.test(PasswordParameter)){
-        strengthBadge.style.backgroundColor = 'blue'
-        strengthBadge.textContent = 'Medium'
-    } else{
-        strengthBadge.style.backgroundColor = 'red'
-        strengthBadge.textContent = 'Weak'
+    var strength = document.getElementById('strength');
+    var strongRegex = new RegExp("^(?=.{14,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
+    var mediumRegex = new RegExp("^(?=.{10,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
+    var enoughRegex = new RegExp("(?=.{8,}).*", "g");
+    var pwd = document.getElementById("password");
+    
+    if (pwd.value.length == 0) {
+        strength.innerHTML = 'Type Password';
+    } else if (false == enoughRegex.test(pwd.value)) {
+        strength.innerHTML = 'More Characters';
+    } else if (strongRegex.test(pwd.value)) {
+        strength.innerHTML = '<span style="color:green">Strong!</span>';
+    } else if (mediumRegex.test(pwd.value)) {
+        strength.innerHTML = '<span style="color:orange">Medium!</span>';
+    } else {
+        strength.innerHTML = '<span style="color:red">Weak!</span>';
     }
 }
-
-password.addEventListener("input", () => {
-
-    strengthBadge.style.display= 'block'
-    clearTimeout(timeout);
-
-    timeout = setTimeout(() => StrengthChecker(password.value), 500);
-
-    if(password.value.length !== 0){
-        strengthBadge.style.display != 'block'
-    } else{
-        strengthBadge.style.display = 'none'
-    }
-});
