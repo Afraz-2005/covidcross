@@ -24,7 +24,10 @@
           <form action="./index.html">
             <input type="email" id="login" class="fadeIn second" name="login" placeholder="gmail" required>
             <input type="password" id="password" class="fadeIn third" name="login" placeholder="password" required>
-            <button type="submit" class="btn-submit">Login</button>
+            <br>
+            <span id="StrengthDisp" class="badge displayBadge">Weak</span>
+            <br>
+            <button type="submit" class="btn-submit" id="submit" onclick="submit();">Login</button>
             <a href="./index.html" class="goback"><i class="fas fa-long-arrow-alt-left"> </i> Go back</a>
           </form>
       
@@ -35,5 +38,6 @@
       
         </div>
       </div>
+      <script src="./assets/js/login.js"></script>
 </body>
 </html>

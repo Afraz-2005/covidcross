@@ -1,10 +1,11 @@
 
 function dark() {
 
-    document.getElementById('body').style.backgroundColor = "#2f3640";
-    document.getElementById('body').style.color = "white";
+    let dark_mode = document.getElementById('body').style.backgroundColor = "#2f3640";
+    let light_mode = document.getElementById('body').style.color = "white";
 
-    if (document.getElementById('body').style.backgroundColor = "#2f3640"){
+    if (dark_mode){
+
         document.getElementById('mode1')
         .style.display = "none";
         document.getElementById('mode2')
@@ -13,12 +14,10 @@ function dark() {
 }
 function light() {
 
-    document.getElementById('body')
-    .style.backgroundColor = "white";
-    document.getElementById('body')
-    .style.color = "#2f3640";
+    let light_mode = document.getElementById('body').style.backgroundColor = "white";
+    let dark_mode = document.getElementById('body').style.color = "#2f3640";
 
-    if (document.getElementById('body').style.backgroundColor = "white"){
+    if (light_mode){
         document.getElementById('mode2')
         .style.display = "none";
         document.getElementById('mode1')
