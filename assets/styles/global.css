@@ -211,42 +211,7 @@ footer{
 header{
     padding: 0px;
 }
-.navbar .container .na{
 
-    left: 50%;
-    transform: translatex(500%);
-}
-.navbar .container .nb{
-
-    left: 50%;
-    transform: translatex(100%);
-}
-@media (max-width: 1199px){
-	.navbar .container .na{
-
-		left: 50% !important;
-		transform: translatex(300%) !important;
-		
-	}
-	.navbar .container .nb{
-	
-		left: 20% !important;
-		transform: translatex(10%) !important;
-	}
-}
-@media (max-width: 1400px){
-	.navbar .container .na{
-
-		left: 50%;
-		transform: translatex(400%);
-		
-	}
-	.navbar .container .nb{
-	
-		left: 20%;
-		transform: translatex(50%);
-	}
-}
 #btn-back-to-top {
 	position: fixed;
 	bottom: 20px;
