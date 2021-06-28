@@ -23,7 +23,7 @@ function light() {
         document.getElementById('mode1')
         .style.display = "block";
     }
-}
+} 
 
 if (document.getElementById('body').style.backgroundColor = "white"){
 
