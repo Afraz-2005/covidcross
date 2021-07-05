@@ -2,17 +2,17 @@
 var requestOptions = {
     method: "GET",
     redirect: "follow",
-  };
+};
   
-  fetch(
+fetch(
     "https://corona.lmao.ninja/v2/countries/Bangladesh?yesterday=false",
     requestOptions
-  )
+)
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
       covidData(data);
-    });
+});
   
   // Selectors
   
@@ -46,20 +46,19 @@ var requestOptions = {
   
   // Event Listeners
   
-  window.addEventListener("scroll", function () {
+window.addEventListener("scroll", function () {
     parallax1(".container1", 0.5);
-  });
-  
-  // Free code
+});
   
   // Funtions
   
-  function parallax1(item, speed) {
+function parallax1(item, speed) {
     element = document.querySelector(item);
     element.style.transform = `translateY(${window.pageYOffset * speed}px)`;
-  }
+}
   
-  function covidData(data) {
+function covidData(data) {
+
     covidCases.innerHTML = data.cases;
     covidDeaths.innerHTML = data.deaths;
     totalCases.innerHTML = data.cases;
@@ -85,7 +84,7 @@ var requestOptions = {
   
     mortalityRate.innerHTML = mortPerc.toFixed(1) + "%";
     recoveryRate.innerHTML = recrPerc.toFixed(1) + "%";
-  }
+}
   
   function animateOnScroll(element, animation) {
     var elementPosition = element.getBoundingClientRect().top;
@@ -94,5 +93,5 @@ var requestOptions = {
     if (elementPosition <= screenPosition) {
       element.style.animation = animation;
     }
-  }
+}
   
